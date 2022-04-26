@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        background:radial-gradient(rgb(255, 255, 255), rgb(141, 125, 127)); 
+	    border: 1px solid #333;
+    }
+    header{
+        width:100%;
+        height: 480px;
+        background: url(top.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    header h1{
+        text-align: center;
+        padding-top: 60px;
+        color: rgb(221, 234, 235);
+        font-family: "MS 明朝", serif;
+        font-size: 100px;
+    }
+    header h2{
+        text-align: center;
+        color: rgb(221, 234, 235);
+        font-family: "MS 明朝", serif;
+        font-size: 50px;
+    }
+    .topic{
+        color:#336633;
+        font-size: 100px;
+        text-align: center;
+        font-family: "Impact", serif;
+    }
+    .topic2{
+        color:#336633;
+        font-size: 100px;
+        text-align: center;
+        margin-top:600px;
+        font-family: "Impact", serif;
+    }
+    .btn1 {
+        border-radius: 5px;
+        background-color: lightblue;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        margin: 10px;   
+    }
+    .btn2 {
+        border-radius: 5px;
+        background-color: rgb(54, 241, 63);
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        margin: 10px;   
+    }
+    .btn3 {
+        border-radius: 5px;
+        background-color: rgb(233, 180, 36);
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        margin: 10px;   
+    }
+    .btn4 {
+        border-radius: 5px;
+        background-color: rgb(241, 57, 186);
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        margin: 10px;   
+    }
+    .map {
+        text-align: center;
+        margin: 60px; 
+    }
+    .link {
+        color:white;
+        text-align:right;
+        background-color:#cccccc;
+    }
+    .paper1 {
+        width: 720px;
+        padding: 15px;
+        margin: 2em auto;
+        background:#cccc99;
+        color: #000;
+        box-shadow: 4px 4px 4px rgba(0,0,0,0.03);
+        transform:rotate(2deg);
+        word-break: break-all;
+    }
+    .paper2 {
+        width: 420px;
+        padding: 15px;
+        background: #94946d;
+        color: #000;
+        box-shadow: 4px 4px 4px rgba(0,0,0,0.03);
+        transform:rotate(2deg);
+        word-break: break-all;
+        float:right;
+        margin-right:120px;
+    }
+    .paper3 {
+        width: 520px;
+        padding: 15px;
+        margin: 2em auto;
+        background: #ffffcc;
+        color: #000;
+        box-shadow: 4px 4px 4px rgba(0,0,0,0.03);
+        transform:rotate(2deg);
+        word-break: break-all;
+        margin-left:auto;
+    }
+    .paper_tape {
+        width: 50%;
+        height: 35px;
+        margin: -25px auto 0;
+        background: rgba(251, 234, 144, 0.5);
+        transform: rotate(-3deg);
+        opacity: 0.9;
+    }
+    .paper_title {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 10px;
+    }
+    .paper_subtitle {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 1em;
+    }
+    .sentence{
+        font-size:30px;
+        color:rgb(8, 19, 11);
+        font-family: "MS ゴシック", serif;
+    }
+    #mypic{
+        margin-left:60px;
+        margin-top:30px;
+        float:left;
+
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Takafumi Sato</h1> 
+        <h2>@Kashihara Laboratory</h2>
+        <div style="text-align: center;margin-top:80px;">
+            <a href="#form1" class="btn1">profile</a>
+            <a href="#form2" class="btn2">favorite</a>
+            <a href="#form3" class="btn3">contact</a>
+            <a href="#form4" class="btn4">link</a>
+        </div>
+    </header>
+    <div id=form1 class="topic" style="margin-top:80px;">profile</div>
+    <div class="paper1">
+        <div class="paper_tape"> </div>
+        <p class="paper_title">佐藤孝史</p>
+        <p class="paper_subtitle">(さとう たかふみ)</p>
+        <p style="font-size:30px;color:rgb(8, 19, 11);text-align:center;">
+            1999年6月15日生まれ<br>
+            神奈川県出身で出身高校は桜美林高校です。<br>
+            なんだかんだでいろんなスポーツをしてきました。<br>
+            小学校　野球<br>
+            中学校　バスケ<br>
+            高校　陸上<br>
+            大学　陸上    
+        </p>
+    </div>
+    <div id=form2 class="topic">favorite</div>
+    <div>
+        <img id=mypic src="1.png" width="700" height="550" class="pic">
+    </div>
+    <script>
+        let pics_src = new Array("1.jpg","2.png","3.jpg","4.jpg");
+        let num = -1;
+        slideshow_timer();
+        function slideshow_timer(){
+            if (num == 3)    num = 0;
+            else             num ++;
+            document.getElementById("mypic").src=pics_src[num];
+            setTimeout(slideshow_timer,3000); 
+        }
+    </script>
+    <div class="paper2">
+        <div class="paper_tape"> </div>
+        <div class="sentence">
+            趣味はバスケとテニスですが、スポーツは基本どれも好きです。
+            後はゲームも好きで、よくスマブラを友達とやったりします。
+            それと最近は兄の影響でサウナに少しハマりつつあります。
+            <br>
+            &#8678;
+            趣味に関する写真が全くと言っていいほどないので、いろんな場所へ旅行に行ったときの写真を載せておきます。        
+        </div>
+    </div>
+    <div id=form3 class="topic2">contact</div>
+    <div class="paper3">
+        <div class="paper_tape"> </div>
+        <p class="paper_title">電気通信大学</p>
+        <p class="paper_subtitle">@西3号館3階 柏原研究室</p>
+        <p style="font-size:30px">
+            御用のある方は
+        </p>
+        <br><br>
+        <div style="text-align:center; font-size:40px;">
+            t.sato@uec.ac.jp
+        </div>
+        <br><br>
+        <p style="font-size:30px;">までお願いします。</p>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717.8699405479706!2d139.54099659685068!3d35.657336641749396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f011ab2ade29%3A0xdf78b2a20023ed93!2z44CSMTgyLTAwMzMg5p2x5Lqs6YO96Kq_5biD5biC5a-M5aOr6KaL55S677yS5LiB55uuIOilvzPlj7fppKg!5e0!3m2!1sja!2sjp!4v1620182444312!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div style="background-color:#bebdbd">
+        <div id=form4 style="font-family: MS 明朝, serif;font-size:30px;">link</div>
+        <a href="https://www.uec.ac.jp/">電気通信大学</a>
+        <br/>
+        <a href="https://wlgate.inf.uec.ac.jp/">柏原研究室</a>
+        <br/>
+        <a href="https://www.obirin.ed.jp/">桜美林高校</a>
+        <br/>
+        <div class="link">
+            ©2020 Takafumi Sato
+        </div>
+    </div>
+</body>
+</html>
