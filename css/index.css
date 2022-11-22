@@ -1,0 +1,147 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background:radial-gradient(rgb(255, 255, 255), rgb(141, 125, 127)); 
+    border: 1px solid #333;
+}
+header{
+    width:100%;
+    height: 480px;
+    background: url(../picture/top.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header h1{
+    text-align: center;
+    padding-top: 60px;
+    color: rgb(221, 234, 235);
+    font-family: "MS 明朝", serif;
+    font-size: 100px;
+}
+header h2{
+    text-align: center;
+    color: rgb(221, 234, 235);
+    font-family: "MS 明朝", serif;
+    font-size: 50px;
+}
+.topic{
+    color:#336633;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Impact", serif;
+}
+.topic2{
+    color:#336633;
+    font-size: 100px;
+    text-align: center;
+    margin-top:600px;
+    font-family: "Impact", serif;
+}
+.btn1 {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;   
+}
+.btn2 {
+    border-radius: 5px;
+    background-color: rgb(54, 241, 63);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;   
+}
+.btn3 {
+    border-radius: 5px;
+    background-color: rgb(233, 180, 36);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;   
+}
+.btn4 {
+    border-radius: 5px;
+    background-color: rgb(241, 57, 186);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;   
+}
+.map {
+    text-align: center;
+    margin: 60px; 
+}
+.link {
+    color:white;
+    text-align:right;
+    background-color:#cccccc;
+}
+.paper1 {
+    width: 720px;
+    padding: 15px;
+    margin: 2em auto;
+    background:#cccc99;
+    color: #000;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.03);
+    transform:rotate(2deg);
+    word-break: break-all;
+}
+.paper2 {
+    width: 420px;
+    padding: 15px;
+    background: #94946d;
+    color: #000;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.03);
+    transform:rotate(2deg);
+    word-break: break-all;
+    float:right;
+    margin-right:180px;
+    position:relative;
+    z-index: 2;
+}
+.paper3 {
+    width: 520px;
+    padding: 15px;
+    margin: 2em auto;
+    background: #ffffcc;
+    color: #000;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.03);
+    transform:rotate(2deg);
+    word-break: break-all;
+    margin-left:auto;
+    position:relative;
+    z-index: 1;
+}
+.paper_tape {
+    width: 50%;
+    height: 35px;
+    margin: -25px auto 0;
+    background: rgba(251, 234, 144, 0.5);
+    transform: rotate(-3deg);
+    opacity: 0.9;
+}
+.paper_title {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+}
+.paper_subtitle {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+.sentence{
+    font-size:30px;
+    color:rgb(8, 19, 11);
+    font-family: "MS ゴシック", serif;
+}
+#mypic{
+    margin-left:60px;
+    margin-top:30px;
+    float:left;
+}
